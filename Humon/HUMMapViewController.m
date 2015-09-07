@@ -27,6 +27,18 @@
     self.mapView = [[MKMapView alloc] initWithFrame:self.view.frame];
     self.mapView.delegate = self;
     [self.view addSubview:self.mapView];
+    
+    // Create an "Add" button
+    UIBarButtonItem *button = [[UIBarButtonItem alloc]
+                               initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                               target:self
+                               action:@selector(addButtonPressed)];
+    self.navigationItem.leftBarButtonItem = button;
+}
+
+- (void)addButtonPressed
+{
+    NSLog(@"You pressed the add button!");
 }
 
 - (void)didReceiveMemoryWarning {
