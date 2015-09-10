@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		18D6F09DEEE244EB6E51B9AB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94397283EF6EAD6B6BBFC773 /* libPods.a */; };
+		F41105611BA1F268006DE10D /* HUMRailsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F41105601BA1F268006DE10D /* HUMRailsClient.m */; };
+		F41105651BA1F648006DE10D /* HUMUserSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F41105641BA1F648006DE10D /* HUMUserSession.m */; };
 		F42390E01B9E1B71001B1391 /* HUMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42390DF1B9E1B71001B1391 /* HUMMapViewController.m */; };
 		F44C37A11B9E24B200BA1BC0 /* HUMEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44C37A01B9E24B200BA1BC0 /* HUMEventViewController.m */; };
 		F45883FE1B95001500E61A6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F45883FD1B95001500E61A6D /* main.m */; };
@@ -32,6 +34,10 @@
 /* Begin PBXFileReference section */
 		94397283EF6EAD6B6BBFC773 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC13FDD09231BD90C09AD415 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F411055F1BA1F268006DE10D /* HUMRailsClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUMRailsClient.h; sourceTree = "<group>"; };
+		F41105601BA1F268006DE10D /* HUMRailsClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUMRailsClient.m; sourceTree = "<group>"; };
+		F41105631BA1F648006DE10D /* HUMUserSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUMUserSession.h; sourceTree = "<group>"; };
+		F41105641BA1F648006DE10D /* HUMUserSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUMUserSession.m; sourceTree = "<group>"; };
 		F42390DE1B9E1B71001B1391 /* HUMMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUMMapViewController.h; sourceTree = "<group>"; };
 		F42390DF1B9E1B71001B1391 /* HUMMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUMMapViewController.m; sourceTree = "<group>"; };
 		F44C379F1B9E24B200BA1BC0 /* HUMEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUMEventViewController.h; path = Controllers/HUMEventViewController.h; sourceTree = "<group>"; };
@@ -87,6 +93,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F41105621BA1F630006DE10D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F41105631BA1F648006DE10D /* HUMUserSession.h */,
+				F41105641BA1F648006DE10D /* HUMUserSession.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		F45883EF1B95001500E61A6D = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				F4771F281BA19A300039D227 /* Controllers */,
+				F4771F2C1BA19DCA0039D227 /* Clients */,
+				F41105621BA1F630006DE10D /* Models */,
 				F45883FF1B95001500E61A6D /* AppDelegate.h */,
 				F45884001B95001500E61A6D /* AppDelegate.m */,
 				F45884081B95001500E61A6D /* Main.storyboard */,
@@ -157,6 +174,15 @@
 				F44C37A01B9E24B200BA1BC0 /* HUMEventViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F4771F2C1BA19DCA0039D227 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				F411055F1BA1F268006DE10D /* HUMRailsClient.h */,
+				F41105601BA1F268006DE10D /* HUMRailsClient.m */,
+			);
+			name = Clients;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,8 +323,10 @@
 				F45884011B95001500E61A6D /* AppDelegate.m in Sources */,
 				F42390E01B9E1B71001B1391 /* HUMMapViewController.m in Sources */,
 				F44C37A11B9E24B200BA1BC0 /* HUMEventViewController.m in Sources */,
+				F41105651BA1F648006DE10D /* HUMUserSession.m in Sources */,
 				F45883FE1B95001500E61A6D /* main.m in Sources */,
 				F45884041B95001500E61A6D /* Humon.xcdatamodeld in Sources */,
+				F41105611BA1F268006DE10D /* HUMRailsClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
