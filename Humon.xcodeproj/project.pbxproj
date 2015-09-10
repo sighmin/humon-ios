@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		18D6F09DEEE244EB6E51B9AB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94397283EF6EAD6B6BBFC773 /* libPods.a */; };
 		F42390E01B9E1B71001B1391 /* HUMMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42390DF1B9E1B71001B1391 /* HUMMapViewController.m */; };
+		F44C37A11B9E24B200BA1BC0 /* HUMEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44C37A01B9E24B200BA1BC0 /* HUMEventViewController.m */; };
 		F45883FE1B95001500E61A6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F45883FD1B95001500E61A6D /* main.m */; };
 		F45884011B95001500E61A6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F45884001B95001500E61A6D /* AppDelegate.m */; };
 		F45884041B95001500E61A6D /* Humon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F45884021B95001500E61A6D /* Humon.xcdatamodeld */; };
@@ -34,6 +35,8 @@
 		AC13FDD09231BD90C09AD415 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F42390DE1B9E1B71001B1391 /* HUMMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUMMapViewController.h; sourceTree = "<group>"; };
 		F42390DF1B9E1B71001B1391 /* HUMMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUMMapViewController.m; sourceTree = "<group>"; };
+		F44C379F1B9E24B200BA1BC0 /* HUMEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUMEventViewController.h; path = Controllers/HUMEventViewController.h; sourceTree = "<group>"; };
+		F44C37A01B9E24B200BA1BC0 /* HUMEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HUMEventViewController.m; path = Controllers/HUMEventViewController.m; sourceTree = "<group>"; };
 		F45883F81B95001500E61A6D /* Humon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Humon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45883FC1B95001500E61A6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F45883FD1B95001500E61A6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 			children = (
 				F42390DE1B9E1B71001B1391 /* HUMMapViewController.h */,
 				F42390DF1B9E1B71001B1391 /* HUMMapViewController.m */,
+				F44C379F1B9E24B200BA1BC0 /* HUMEventViewController.h */,
+				F44C37A01B9E24B200BA1BC0 /* HUMEventViewController.m */,
 				F45883FF1B95001500E61A6D /* AppDelegate.h */,
 				F45884001B95001500E61A6D /* AppDelegate.m */,
 				F45884051B95001500E61A6D /* ViewController.h */,
@@ -288,6 +293,7 @@
 			files = (
 				F45884011B95001500E61A6D /* AppDelegate.m in Sources */,
 				F42390E01B9E1B71001B1391 /* HUMMapViewController.m in Sources */,
+				F44C37A11B9E24B200BA1BC0 /* HUMEventViewController.m in Sources */,
 				F45883FE1B95001500E61A6D /* main.m in Sources */,
 				F45884071B95001500E61A6D /* ViewController.m in Sources */,
 				F45884041B95001500E61A6D /* Humon.xcdatamodeld in Sources */,

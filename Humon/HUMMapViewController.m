@@ -7,6 +7,7 @@
 //
 
 #import "HUMMapViewController.h"
+#import "HUMEventViewController.h"
 @import MapKit;
 
 @interface HUMMapViewController () <MKMapViewDelegate>
@@ -39,6 +40,8 @@
 - (void)addButtonPressed
 {
     NSLog(@"You pressed the add button!");
+    HUMEventViewController *eventViewController = [[HUMEventViewController alloc] init];
+    [self.navigationController pushViewController:eventViewController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
