@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^HUMRailsClienErrorCompletionBlock)(NSError *error);
+
 @interface HUMRailsClient : NSObject
 
 + (instancetype)sharedClient;
+- (void)createCurrentUserWithCompletionBlock:(HUMRailsClienErrorCompletionBlock)block;
 
 @end
