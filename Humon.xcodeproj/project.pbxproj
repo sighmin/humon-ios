@@ -13,7 +13,6 @@
 		F45883FE1B95001500E61A6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F45883FD1B95001500E61A6D /* main.m */; };
 		F45884011B95001500E61A6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F45884001B95001500E61A6D /* AppDelegate.m */; };
 		F45884041B95001500E61A6D /* Humon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F45884021B95001500E61A6D /* Humon.xcdatamodeld */; };
-		F45884071B95001500E61A6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F45884061B95001500E61A6D /* ViewController.m */; };
 		F458840A1B95001500E61A6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45884081B95001500E61A6D /* Main.storyboard */; };
 		F458840C1B95001500E61A6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F458840B1B95001500E61A6D /* Images.xcassets */; };
 		F458840F1B95001500E61A6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F458840D1B95001500E61A6D /* LaunchScreen.xib */; };
@@ -43,8 +42,6 @@
 		F45883FF1B95001500E61A6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F45884001B95001500E61A6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F45884031B95001500E61A6D /* Humon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Humon.xcdatamodel; sourceTree = "<group>"; };
-		F45884051B95001500E61A6D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F45884061B95001500E61A6D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F45884091B95001500E61A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F458840B1B95001500E61A6D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F458840E1B95001500E61A6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -113,14 +110,9 @@
 		F45883FA1B95001500E61A6D /* Humon */ = {
 			isa = PBXGroup;
 			children = (
-				F42390DE1B9E1B71001B1391 /* HUMMapViewController.h */,
-				F42390DF1B9E1B71001B1391 /* HUMMapViewController.m */,
-				F44C379F1B9E24B200BA1BC0 /* HUMEventViewController.h */,
-				F44C37A01B9E24B200BA1BC0 /* HUMEventViewController.m */,
+				F4771F281BA19A300039D227 /* Controllers */,
 				F45883FF1B95001500E61A6D /* AppDelegate.h */,
 				F45884001B95001500E61A6D /* AppDelegate.m */,
-				F45884051B95001500E61A6D /* ViewController.h */,
-				F45884061B95001500E61A6D /* ViewController.m */,
 				F45884081B95001500E61A6D /* Main.storyboard */,
 				F458840B1B95001500E61A6D /* Images.xcassets */,
 				F458840D1B95001500E61A6D /* LaunchScreen.xib */,
@@ -154,6 +146,17 @@
 				F45884191B95001500E61A6D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4771F281BA19A300039D227 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F42390DE1B9E1B71001B1391 /* HUMMapViewController.h */,
+				F42390DF1B9E1B71001B1391 /* HUMMapViewController.m */,
+				F44C379F1B9E24B200BA1BC0 /* HUMEventViewController.h */,
+				F44C37A01B9E24B200BA1BC0 /* HUMEventViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +298,6 @@
 				F42390E01B9E1B71001B1391 /* HUMMapViewController.m in Sources */,
 				F44C37A11B9E24B200BA1BC0 /* HUMEventViewController.m in Sources */,
 				F45883FE1B95001500E61A6D /* main.m in Sources */,
-				F45884071B95001500E61A6D /* ViewController.m in Sources */,
 				F45884041B95001500E61A6D /* Humon.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
