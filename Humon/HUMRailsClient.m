@@ -66,6 +66,8 @@ static NSString *const HUMAppSecret = @"c0754828-9052-4229-b2da-5d83a8f72926";
 {
     // Create a request to POST /users
     NSString *urlString = [NSString stringWithFormat:@"%@users", ROOT_URL];
+    NSLog(urlString);
+    
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
     [request setHTTPMethod:@"POST"];

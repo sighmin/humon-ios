@@ -8,6 +8,9 @@
 
 #import "HUMMapViewController.h"
 #import "HUMEventViewController.h"
+#import "HUMRailsClient.h"
+#import "HUMUserSession.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 @import MapKit;
 
 @interface HUMMapViewController () <MKMapViewDelegate>
@@ -47,6 +50,24 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    if (![HUMUserSession userIsLoggedIn]) {
+        [SVProgressHUD show];
+        
+        HUMRailsClient *rc = [HUMRailsClient sharedClient];
+        [rc createCurrentUserWithCompletionBlock:^(NSError *error) {
+            if (error) {
+                [SVProgressHUD showErrorWithStatus:NSLocalizedString(@"App authentication error", nil)];
+            } else {
+                [SVProgressHUD dismiss];
+            }
+        }];
+    }
 }
 
 
