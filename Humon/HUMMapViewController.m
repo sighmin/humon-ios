@@ -42,7 +42,6 @@
 
 - (void)addButtonPressed
 {
-    NSLog(@"You pressed the add button!");
     HUMEventViewController *eventViewController = [[HUMEventViewController alloc] init];
     [self.navigationController pushViewController:eventViewController animated:YES];
 }

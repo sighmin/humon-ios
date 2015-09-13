@@ -9,7 +9,7 @@
 #import "HUMRailsClient.h"
 #import "HUMUserSession.h"
 
-static NSString *const HUMAppSecret = @"c0754828-9052-4229-b2da-5d83a8f72926";
+static NSString *const HUMAppSecret = @"456df9b9d11a3aae321c10ac1d1937f4";
 
 @interface HUMRailsClient ()
 
@@ -66,7 +66,6 @@ static NSString *const HUMAppSecret = @"c0754828-9052-4229-b2da-5d83a8f72926";
 {
     // Create a request to POST /users
     NSString *urlString = [NSString stringWithFormat:@"%@users", ROOT_URL];
-    NSLog(urlString);
     
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
@@ -75,6 +74,7 @@ static NSString *const HUMAppSecret = @"c0754828-9052-4229-b2da-5d83a8f72926";
     // Create a task to encapsulate your request and a completion block
     NSURLSessionTask *task = [self.session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *reponse, NSError *error) {
         if (!error) {
+            
             // Set the user session properties using the response
             NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
             [HUMUserSession setUserToken:responseDictionary[@"device_token"]];
@@ -83,6 +83,7 @@ static NSString *const HUMAppSecret = @"c0754828-9052-4229-b2da-5d83a8f72926";
             
             // Create a new configuration with new token
             NSURLSessionConfiguration *newConfiguration = self.session.configuration;
+            
             [newConfiguration setHTTPAdditionalHeaders:@{
                                                          @"Accept" : @"application/json",
                                                          @"Content-Type" : @"application/json",
@@ -101,5 +102,4 @@ static NSString *const HUMAppSecret = @"c0754828-9052-4229-b2da-5d83a8f72926";
     [task resume];
     
 }
-
 @end
