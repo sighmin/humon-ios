@@ -72,7 +72,7 @@ static NSString *const HUMAppSecret = @"456df9b9d11a3aae321c10ac1d1937f4";
     [request setHTTPMethod:@"POST"];
     
     // Create a task to encapsulate your request and a completion block
-    NSURLSessionTask *task = [self.session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *reponse, NSError *error) {
+    NSURLSessionTask *task = [self.session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if (!error) {
             
             // Set the user session properties using the response
